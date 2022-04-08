@@ -8,7 +8,7 @@ namespace zich{
     public:
         int row, col;
         vector<double> mat;
-        Matrix(vector<double> mat, int row, int col);
+        Matrix(vector<double> const &mat, int row, int col);
         Matrix operator + (Matrix const &mat);
         void operator += (Matrix const &mat);
         Matrix operator + (double const a);
